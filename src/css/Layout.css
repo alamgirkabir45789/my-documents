@@ -1,0 +1,31 @@
+#logo {
+  position: relative;
+  color: white;
+  padding: 15px;
+  border: 1px solid green;
+  left: 0;
+  z-index: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(119, 136, 100, 0.13);
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  color: #00bcd4;
+  text-align: center;
+  margin-top: 5px;
+  transition-duration: 2s;
+}
+.footer p:hover {
+  color: red;
+  font-size: 20px;
+  animation-duration: 2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
