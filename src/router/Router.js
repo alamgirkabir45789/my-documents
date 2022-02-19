@@ -4,9 +4,12 @@ import Layout from "../navigation/Layout/Layout";
 import About from "../views/about/form/About";
 import Login from "../views/account/form/Login";
 import Register from "../views/account/form/Register";
-import Contact from "../views/contact/form/Contact";
+import Cascade from "../views/cascade/Cascade";
+import Contact from "../views/contact/list/Contact";
 import Error from "../views/error/form/Error";
 import Home from "../views/home/form/Home";
+import Mess from "../views/mess/home/list";
+import Product from "../views/product/list";
 import Project from "../views/project/list";
 
 const Router = () => {
@@ -26,13 +29,21 @@ const Router = () => {
           element: <About />,
         },
         {
+          path: "/cascade",
+          element: <Cascade />,
+        },
+        {
+          path: "/mess",
+          element: <Mess />,
+        },
+        {
           path: "/project",
           element: <Project />,
         },
-        // {
-        //   path: "/product",
-        //   element: <Product />,
-        // },
+        {
+          path: "/product",
+          element: <Product />,
+        },
         // {
         //   path: "/customer",
         //   element: <Customer />,

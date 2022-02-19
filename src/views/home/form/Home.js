@@ -274,7 +274,7 @@ const Home = () => {
             <div className="d-flex justify-content-center mb-2">
               <div className="spinner "></div>
               <div id="skill">
-                <h2 style={{color:'green'}}>My Skill</h2>
+                <h2 style={{ color: "green" }}>My Skill</h2>
               </div>
               {/* <div className="">
                 <h2>My Skill</h2>

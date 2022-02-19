@@ -6,7 +6,7 @@ import profileImage from "../../../assets/images/AlamgirSmallSizePP.jpg";
 import "../../../css/About.css";
 const About = () => {
   return (
-    <Card className="m-3 p-2 mb-5">
+    <Card className=" p-2 mb-5">
       {/* container start */}
       <div className="container">
         {/* header start */}

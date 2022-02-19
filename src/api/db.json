@@ -1,0 +1,48 @@
+{
+  "projectList": [
+    {
+      "id": 94,
+      "projectName": "E-Ticket System",
+      "description": "This project create for Bus Ticketing .",
+      "projectLink": "https://github.com/alamgirkabir45789/ETicket",
+      "technology": [
+        "Asp.Net Core",
+        "Bootstrap",
+        "Javascript",
+        "HTML",
+        "CSS3"
+      ]
+    },
+    {
+      "id": 82,
+      "projectName": "Hospital Management System",
+      "description": "This project create for Hospital Management.Patient can  online Appoint .",
+      "projectLink": "https://github.com/alamgirkabir45789/Asp_Project_Alamgir/tree/master/Asp_Project_Alamgir",
+      "technology": [
+        "ASP.NET WEB FORM",
+        "Bootstrap",
+        "Javascript"
+      ]
+    },
+    {
+      "id": 28,
+      "projectName": "lklk",
+      "description": "lklk",
+      "projectLink": "lklkl",
+      "technology": [
+        "klkl",
+        "jhjhj"
+      ]
+    }
+  ],
+  "member": [
+    {
+      "id": 12,
+      "name": "Jamalopopo"
+    },
+    {
+      "id": 57,
+      "name": "kamal"
+    }
+  ]
+}

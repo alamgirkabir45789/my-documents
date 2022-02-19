@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from "react";
+import CustomModal from "../../../utility/customComponent/CustomModal";
 
 const ProjectAddForm = () => {
-    return (
-        <div>
-            This is Add Form
-        </div>
-    )
-}
+  const [openModal, setOpenModal] = useState(false);
 
-export default ProjectAddForm
+  const handleToogleModalClose = () => {
+    setOpenModal(!openModal);
+  };
+  const handleModalSubmit = () => {
+    setOpenModal(!openModal);
+  };
+  return (
+    <div>
+      <CustomModal
+        openModal={openModal}
+        handleToogleModalClose={handleToogleModalClose}
+        handleModalSubmit={handleModalSubmit}
+        title="hi"
+      >
+        <h2>Hello World</h2>
+      </CustomModal>
+    </div>
+  );
+};
+
+export default ProjectAddForm;

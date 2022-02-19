@@ -31,6 +31,16 @@ const Layout = () => {
             <Link className="nav-link" to="/about">
               About
             </Link>
+          </li>{" "}
+          <li>
+            <Link className="nav-link" to="/cascade">
+              Cascade
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to="/mess">
+              Hotel
+            </Link>
           </li>
           <li>
             <Link className="nav-link" to="/product">
@@ -60,7 +70,6 @@ const Layout = () => {
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
-
           <li>
             <Link className="nav-link disabled" to="">
               Disabled
