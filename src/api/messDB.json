@@ -5,5 +5,39 @@
       "email": "a@gmail.com",
       "phone": "012458796"
     }
+  ],
+  "meal": [
+    {
+      "id": 11,
+      "name": "Karim",
+      "morning": 1,
+      "Noon": 1,
+      "Evening": 1,
+      "Night": 1,
+      "total": 4,
+      "dailyExpence": 200,
+      "totalExpence": 3000,
+      "totalMeal": 20,
+      "ExtraCharge": 500,
+      "totalBil": 5000,
+      "dueAmount": 122,
+      "payStatus": "paid"
+    },
+    {
+      "id": 11,
+      "name": "Shakib",
+      "morning": 1,
+      "Noon": 1,
+      "Evening": 1,
+      "Night": 1,
+      "total": 4,
+      "dailyExpence": 200,
+      "totalExpence": 3000,
+      "totalMeal": 20,
+      "ExtraCharge": 500,
+      "totalBil": 5000,
+      "dueAmount": 122,
+      "payStatus": "Not pay"
+    }
   ]
 }

@@ -17,3 +17,6 @@ const testFunc = () => {
   console.log(a);
 };
 testFunc();
+//Javascript String
+const text = "Bangladesh is a  Small Country";
+console.log(text);

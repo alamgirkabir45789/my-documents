@@ -1,5 +1,6 @@
 .container {
-  background-color: #e4f9f5;
+  background-color: #ffffff;
+  /* background-color: #e4f9f5; */
   /* background-image: linear-gradient(#f9fafb, #f9fafb, #f9fafb, #f9fafb); */
   max-width: 1000px;
   margin: 0 auto;
@@ -17,7 +18,7 @@
   border-radius: 50%;
   float: left;
 }
-.profile-image:hover{
+.profile-image:hover {
   box-shadow: 6px 12px 10px green;
 }
 

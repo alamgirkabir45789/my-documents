@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import axios from "axios";
+import _ from "lodash";
 import React, { useEffect, useState } from "react";
 import {
   Button,
@@ -22,7 +23,12 @@ const ProjectList = () => {
     projectName: "",
     description: "",
     projectLink: "",
-    technology: "",
+    technology: [
+      {
+        id: 0,
+        name: "",
+      },
+    ],
   });
   const [techTable, setTechTable] = useState([]);
   const fetchProject = () => {
@@ -37,17 +43,17 @@ const ProjectList = () => {
   }, []);
 
   const clearState = () => {
-    project.technology = "";
+    project.technology.name = "";
   };
 
   const handleAddTechnology = () => {
-    // let techInfo = [];
-    if (project.technology !== "") {
+    if (project.technology.name !== "") {
       const techData = {
         id: Math.floor(Math.random() * 100),
-        technology: project.technology,
+        technology: project.technology.name,
       };
-      setTechTable([...techTable, techData]);
+      console.log(techData);
+      // setTechTable({ ...techTable, techData });
     }
 
     clearState();
@@ -55,9 +61,10 @@ const ProjectList = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
-    const preValue = { ...project };
+    const clone = _.cloneDeep(project);
+    const preValue = { ...clone };
     preValue[name] = value;
+    console.log(preValue);
     setProject(preValue);
   };
 
@@ -100,16 +107,13 @@ const ProjectList = () => {
   };
 
   const handleEditFormOpen = (item) => {
-    console.log(item);
     const techItem = item.technology.map((m, index) => m);
-    console.log(techItem);
     const editData = {
       projectName: item.projectName,
       description: item.description,
       projectLink: item.projectLink,
       // technology: "techItem",
     };
-    console.log(editData);
     setProject(editData);
     setTechTable(techItem);
     setOpenModal(!openModal);
@@ -168,7 +172,7 @@ const ProjectList = () => {
                   id="technology"
                   name="technology"
                   placeholder="Project Technology"
-                  value={project.technology}
+                  value={project.technology.name}
                   onChange={handleInputChange}
                 />
               </FormGroup>{" "}
@@ -196,6 +200,7 @@ const ProjectList = () => {
             </Table>
           </Card>
         </CustomModal>
+
         <Table>
           <thead>
             <tr>
@@ -212,7 +217,7 @@ const ProjectList = () => {
                 <td>{project.projectName}</td>
                 <td>{project.description}</td>
                 <td>{project.projectLink}</td>
-                <td>{project.technology.map((m) => m).toString(", ")}</td>
+                <td>{project.technology.map((m) => m.name).toString(", ")}</td>
                 <td>
                   <Button
                     className="mr-1"
